@@ -15,7 +15,7 @@ Config.armurerie = {
 
 Config.pos = {
 	coffre = {
-		position = {x = -899.3892, y = -1445.2180, z = 6.5268}
+		position = {x = -899.3892, y = -1445.2180, z = 7.5268}
 	},
 	garage = {
 		position = {x = -951.6455, y = -1472.4770, z = 6.7965}

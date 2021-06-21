@@ -122,9 +122,7 @@ Citizen.CreateThread(function()
 Citizen.CreateThread(function()
         while true do
             Citizen.Wait(0)
-    
-
-    
+   
                 local plyCoords3 = GetEntityCoords(GetPlayerPed(-1), false)
                 local dist3 = Vdist(plyCoords3.x, plyCoords3.y, plyCoords3.z, Config.pos.garage.position.x, Config.pos.garage.position.y, Config.pos.garage.position.z)
             if dist3 <= 3.0 then
@@ -146,9 +144,9 @@ function spawnuniCar(car)
         RequestModel(car)
         Citizen.Wait(0)
     end
-
+	
     local x, y, z = table.unpack(GetEntityCoords(GetPlayerPed(-1), false))
-    local vehicle = CreateVehicle(car, Config.pos.spawnvoiture.position.x, Config.pos.spawnvoiture.position.y, Config.pos.spawnvoiture.position.z, Config.pos.spawnvoiture.position.h, true, false)
+    local vehicle = CreateVehicle(car, -973.13, -121.75, 75.33, 144.27, true, false)
     SetEntityAsMissionEntity(vehicle, true, true)
     local plaque = "biker"..math.random(1,9)
     SetVehicleNumberPlateText(vehicle, plaque) 

@@ -10,7 +10,7 @@ INSERT INTO `addon_inventory` (name, label, shared) VALUES
 	('society_bratva', 'Bratva', 1)
 ;
 
-INSERT INTO `jobs` (`name`, `label`, `SecondaryJob`) VALUES
+INSERT INTO `jobs` (`name`, `label`, `whitelisted`) VALUES
 ('bratva', 'Bratva', 1);
 
 -- Si ça marche pas essayez avec ça
